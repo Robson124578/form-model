@@ -1,0 +1,106 @@
+body{
+    background-color: #39c1dc;
+}
+
+.jumbotron, .card-header{
+    color: #fff;
+    background-color:#000000b4;
+    padding: 20px;
+}
+
+.jumb-header{
+    margin-top: 15px;
+    background-color:#5748e2;
+}
+
+form{
+    margin-bottom: 30px;
+    background-color: bisque;
+    padding: 10px;
+    position: relative;
+}
+
+.form-group{
+    position: relative;
+}
+
+label{
+    position: relative;
+    top: 30px;
+    left: 5px;
+    color: #0000007a;
+}
+
+.animInputClass{
+    animation-name: animeInput;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animeInput{
+    from{
+        position: relative;
+        top: 30px;
+        left: 5px;
+        color: #0000007a;
+    }
+    to{
+        position: relative;
+        top: 0;
+        left: 0;
+        color: #000;
+    }
+}
+
+.desAnimInputClass{
+    animation-name: desAnimeInput;
+    animation-duration: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes desAnimeInput{
+    from{
+        position: relative;
+        top: 0;
+        left: 0;
+        color: #000;
+    }
+    to{
+        position: relative;
+        top: 30px;
+        left: 5px;
+        color: #0000007a;
+    }
+}
+
+.fa-window-close{
+    color:#1a7486;
+    font-size: 25px;
+    position: absolute;
+    right: 10px;
+    bottom: 7px;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.sumir-btn{
+    animation-name: sumir;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+.aparecer-btn{
+    animation-name: aparecer;
+    animation-duration: 1s;
+    animation-fill-mode: forwards; 
+}
+
+@keyframes aparecer{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes sumir{
+    from{opacity: 1;}
+    to{opacity: 0;}
+}
